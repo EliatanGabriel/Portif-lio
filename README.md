@@ -52,4 +52,8 @@ Além disso, o projeto também serve como prática contínua em desenvolvimento 
  ┣ 📜 index.html
  ┣ 📜 style.css
  ┣ 📜 main.js
+<<<<<<< HEAD
  ┗ 📜 README.md
+=======
+ ┗ 📜 README.md
+>>>>>>> cbfc70144e6b69b558ea9ae4249adbd3774d97ff
