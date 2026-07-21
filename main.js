@@ -3,7 +3,6 @@
    ============================================= */
 
 // ─── NAVBAR ATIVA NO SCROLL ───────────────────
-
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('main > section[id], header[id]');
 
@@ -23,7 +22,6 @@ const observerNav = new IntersectionObserver((entries) => {
 sections.forEach(section => observerNav.observe(section));
 
 // ─── ANIMAÇÃO DE ENTRADA (FADE IN) ───────────────
-
 const fadeElements = document.querySelectorAll(
   'header, .home-content, .sobre, .skill-card, .card, .contatos ul li'
 );
@@ -33,6 +31,7 @@ fadeElements.forEach(el => el.classList.add('fade-in'));
 const observerFade = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
+      
       // Stagger: cada elemento entra 80ms depois do anterior
       setTimeout(() => {
         entry.target.classList.add('visible');
